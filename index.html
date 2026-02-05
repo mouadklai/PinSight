@@ -157,8 +157,10 @@
       <p>
         PinSight digitizes mechanical pin profiler measurements from photographs,
         transforming raw images into quantitative soil surface roughness indicators.
-        The software follows peer-reviewed methodology (Nolin et al., 2005) and
-        integrates automated computer vision with expert-controlled manual correction.
+        The underlying processing workflow and roughness analysis approaches are
+        based on established methods commonly adopted in the scientific literature,
+        and integrate automated computer vision with expert-controlled manual
+        refinement.
       </p>
     </div>
 
@@ -184,8 +186,9 @@
       <div class="card feature">
         <h3>Scientific Roughness Metrics</h3>
         <p>
-          RMS height, correlation length, maximum height, chain index (tortuosity),
-          and fractal dimension computed with optional detrending.
+          Multiple soil surface roughness metrics are computed automatically.
+          Optional leveling and detrending are available to remove large-scale
+          surface trends, following approaches reported in the literature.
         </p>
       </div>
 
@@ -193,15 +196,15 @@
         <h3>Batch Processing</h3>
         <p>
           Process large image sets simultaneously with automatic statistics
-          (mean, standard deviation, min, max).
+          (mean, standard deviation, minimum, maximum).
         </p>
       </div>
 
       <div class="card feature">
         <h3>Advanced Visualization</h3>
         <p>
-          Microtopography profiles, autocorrelograms, and log–log semivariograms
-          generated automatically for each measurement.
+          Microtopography profiles, autocorrelation analyses, and log–log
+          semivariogram visualizations generated automatically for each measurement.
         </p>
       </div>
 
@@ -225,7 +228,7 @@
       <div class="screenshot">
         <img src="pinsight_full.png" alt="PinSight full application interface">
         <div class="caption">
-          Full PinSight interface showing image processing, metrics,
+          Full PinSight interface showing image processing, roughness metrics,
           batch statistics, and visual analysis.
         </div>
       </div>
@@ -240,8 +243,8 @@
     <div class="card">
       <p>
         When editing mode is enabled, users can interact directly with the detected
-        pins to ensure precise representation of the soil surface profile.
-        All metrics are recalculated instantly after modification.
+        pins to ensure an accurate representation of the soil surface profile.
+        All roughness metrics are recalculated instantly after modification.
       </p>
 
       <div class="screenshot">
