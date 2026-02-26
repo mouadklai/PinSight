@@ -120,7 +120,7 @@ Code signing certificates will be added in future releases.
 
 - Windows 10 / 11 (64-bit)
 - ≥ 8 GB RAM recommended
-- Full HD display recommended
+
 
 ---
 
