@@ -1,266 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>PinSight – Digital Pin Profiler Analysis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    :root {
-      --primary: #00796b;
-      --primary-dark: #004d40;
-      --bg: #f5f7fa;
-      --text: #263238;
-      --muted: #607d8b;
-      --card: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.2rem;
-      opacity: 0.95;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background: white;
-      color: var(--primary-dark);
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .btn-primary:hover {
-      background: #e0f2f1;
-      transform: translateY(-2px);
-    }
-
-    section {
-      padding: 70px 20px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: var(--primary-dark);
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      margin-bottom: 40px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .feature h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    .feature p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .screenshot {
-      margin-top: 25px;
-      text-align: center;
-    }
-
-    .screenshot img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    }
-
-    .caption {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    footer {
-      background: #263238;
-      color: #cfd8dc;
-      text-align: center;
-      padding: 30px 15px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>PinSight</h1>
-  <p>
-    A computer vision–based software for automated, accurate, and reproducible
-    processing of pin profiler photographs for soil surface roughness analysis.
-  </p>
-
-  <p><b>Current version:</b> v0.1</p>
-
-  <a class="btn-primary"
-     href="https://github.com/mouadklai/PinSight/releases/download/v0.1/PinSight_v0.1_Setup.exe">
-    Download PinSight (Windows)
-  </a>
-</header>
-
 <section>
   <div class="container">
 
-    <h2>What PinSight Does</h2>
+    <h2>Graphical User Interface (GUI)</h2>
 
     <div class="card">
+
       <p>
-        PinSight digitizes mechanical pin profiler measurements from photographs,
-        transforming raw images into quantitative soil surface roughness indicators.
-        The underlying processing workflow and roughness analysis approaches are
-        based on established methods commonly adopted in the scientific literature,
-        and integrate automated computer vision with expert-controlled manual
-        refinement.
-      </p>
-    </div>
-
-    <h2>Core Features</h2>
-
-    <div class="features">
-      <div class="card feature">
-        <h3>Automated Pin Detection</h3>
-        <p>
-          Robust computer vision pipeline for board detection, perspective correction,
-          and pin extraction under field conditions.
-        </p>
-      </div>
-
-      <div class="card feature">
-        <h3>Manual Pin Editing</h3>
-        <p>
-          Interactive editor allowing users to add, delete, or reposition pins when
-          automatic detection requires refinement.
-        </p>
-      </div>
-
-      <div class="card feature">
-        <h3>Scientific Roughness Metrics</h3>
-        <p>
-          Multiple soil surface roughness metrics are computed automatically.
-          Optional leveling and detrending are available to remove large-scale
-          surface trends, following approaches reported in the literature.
-        </p>
-      </div>
-
-      <div class="card feature">
-        <h3>Batch Processing</h3>
-        <p>
-          Process large image sets simultaneously with automatic statistics
-          (mean, standard deviation, minimum, maximum).
-        </p>
-      </div>
-
-      <div class="card feature">
-        <h3>Advanced Visualization</h3>
-        <p>
-          Microtopography profiles, autocorrelation analyses, and log–log
-          semivariogram visualizations generated automatically for each measurement.
-        </p>
-      </div>
-
-      <div class="card feature">
-        <h3>Export & Reproducibility</h3>
-        <p>
-          Export full datasets and batch statistics to CSV for reporting,
-          modeling, and publication.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Application Overview</h2>
-
-    <div class="card">
-      <div class="screenshot">
-        <img src="pinsight_full.png" alt="PinSight full application interface">
-        <div class="caption">
-          Full PinSight interface showing image processing, roughness metrics,
-          batch statistics, and visual analysis.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Interactive Pin Editing Mode</h2>
-
-    <div class="card">
-      <p>
-        When editing mode is enabled, users can interact directly with the detected
-        pins to ensure an accurate representation of the soil surface profile.
-        All roughness metrics are recalculated instantly after modification.
+        The PinSight interface is designed to be intuitive for first-time users
+        while offering deep control and quality assurance for advanced research applications.
+        The workflow is organized into three core functional modules:
+        (i) Data Import and Pre-processing,
+        (ii) Interactive Pin Editing,
+        and (iii) Visualization and Reporting.
       </p>
 
+      <!-- Main Annotated GUI -->
       <div class="screenshot">
-        <img src="pinsight_edit_mode.png" alt="PinSight pin editing mode">
+        <img src="gui_full_visual.png" alt="Annotated full PinSight interface">
         <div class="caption">
-          Pin editing mode with draggable pins, add/remove functionality,
-          and immediate metric updates.
+          <b>(a) Annotated full interface.</b>
+          (1) Board dimension inputs for pixel-to-metric scaling;
+          (2) Optional leveling/detrending toggle to remove large-scale slopes;
+          (3) Image import button for loading files;
+          (4) Manual profile module for user-guided digitization;
+          (5) Folder import option for batch processing;
+          (6) Export module for generating statistical reports;
+          (7) Batch statistics panel displaying aggregated roughness indicators;
+          (8) Interactive pin editing toggle for manual correction;
+          (9) Results analysis panel to switch between numerical tables and visualizations.
         </div>
       </div>
+
+      <!-- Subfigure Grid -->
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap:30px; margin-top:40px;">
+
+        <div class="screenshot">
+          <img src="gui_edit_mode.png" alt="Interactive editing mode">
+          <div class="caption">
+            <b>(b) Interactive editing mode</b> enabling manual correction of detected pins.
+          </div>
+        </div>
+
+        <div class="screenshot">
+          <img src="gui_visualizations.png" alt="Visualization module">
+          <div class="caption">
+            <b>(c) Visualization module</b> displaying reconstructed surface profile,
+            autocorrelogram, and log–log semivariogram.
+          </div>
+        </div>
+
+        <div class="screenshot">
+          <img src="gui_manual_profiler.png" alt="Manual profiling workflow">
+          <div class="caption">
+            <b>(d) Manual profile acquisition workflow</b> including ROI selection
+            and axis calibration.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Global Figure Caption -->
+      <div style="margin-top:40px; font-size:0.95rem; color:#607d8b;">
+        <b>Figure.</b> Overview of the PinSight graphical interface.
+        (a) Annotated full interface highlighting functional modules;
+        (b) interactive editing mode enabling manual correction of detected pins;
+        (c) visualization module displaying the reconstructed surface profile,
+        autocorrelogram, and semivariogram;
+        (d) structured manual profiling workflow including ROI selection
+        and axis calibration.
+      </div>
+
     </div>
   </div>
 </section>
-
-<footer>
-  © 2026 Dr. Mouad Klai · PinSight · Soil Surface Roughness Analysis
-</footer>
-
-</body>
-</html>
