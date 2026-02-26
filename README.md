@@ -1,114 +1,117 @@
 # PinSight  
 **Digital Analysis of Pin Profiler Photographs for Soil Surface Roughness**
 
-PinSight is a **computer vision–based desktop application** for the automated and reproducible processing of **pin profiler photographs**, enabling quantitative analysis of **soil surface roughness**.
+PinSight is a computer vision–based desktop application for the automated,
+accurate, and reproducible processing of mechanical pin profiler photographs,
+enabling quantitative characterization of soil surface roughness.
 
-The software is designed for researchers and practitioners in **soil physics, hydrology, erosion studies, and agricultural engineering**, providing an end-to-end workflow from image acquisition to numerical indicators and scientific visualization.
+Designed for research in:
 
----
-
-## 📸 Application Screenshots
-
-### Full Application Interface
-The complete PinSight workspace showing image processing, detected pins, roughness metrics, batch statistics, and scientific visualizations.
-
-![PinSight Full Interface](./pinsight_full.png)
-
----
-
-### Interactive Pin Editing Mode
-Manual editing mode allows users to **add, delete, or reposition pins** when automatic detection requires refinement.  
-All roughness metrics are **updated instantly** after any modification.
-
-![PinSight Pin Editing Mode](./pinsight_edit_mode.png)
+- Soil physics  
+- Hydrology  
+- Erosion science  
+- Agricultural engineering  
+- Environmental monitoring  
 
 ---
 
-## 🚀 Key Features
+# Journal Submission
 
-### 🔍 Automated Image Processing
-- Automatic detection of pin profiler boards
-- Perspective correction and image warping
-- Robust extraction of pin positions from photographs
-- Image quality validation and error handling
+**Journal:** Computers and Electronics in Agriculture  
 
-### ✏️ Interactive Pin Editing
-- Enable or disable manual pin editing
-- Drag pins to refine their positions
-- Add pins (double-click)
-- Remove pins (right-click)
-- Real-time update of all computed metrics
+**Article Title:**  
+PinSight: A computer vision-based software for the efficient and automated processing of pin profiler photographs for soil roughness analysis  
 
-### 📐 Soil Surface Roughness Metrics
-- Multiple roughness indicators are computed automatically
-- Metrics describe both vertical variability and spatial structure
-- Optional **leveling and detrending** can be applied
-- All approaches follow methods commonly adopted in the scientific literature
+**Authors:**  
+Mouad Klai*, Nadia Ouaadi, Mehrez Zribi, Abdelghani Chehbouni  
 
-### 📊 Scientific Visualizations
-- Surface microtopography profile
-- Autocorrelation analysis
-- Log–log semivariogram representation
-- High-quality plot export (PNG, JPG, PDF)
+**Affiliations:**  
 
-### 📁 Batch Processing
-- Process multiple images or entire folders
-- Automatic computation of batch statistics
-- Efficient navigation between samples
+Centre for Remote Sensing Applications (CRSA),  
+Mohammed VI Polytechnic University (UM6P),  
+43150 Ben Guerir, Morocco  
 
-### 📤 Data Export
-- Export results and statistics to CSV format
-- Outputs ready for modeling, reporting, and publication
+CESBIO, UMR 5126, Université de Toulouse (UT3), CNRS, IRD, CNES, USC INRAE,  
+31401 Toulouse Cedex 9, France  
+
+*Corresponding Author:*  
+mouad.klai-ext@um6p.ma  
+klaimouadklai@gmail.com  
 
 ---
 
-## 💻 Installation
+# Graphical User Interface (GUI)
 
-### Windows
-Download the latest installer from the **Releases** page:
+The workflow is structured into three core functional modules:
 
-👉 https://github.com/mouadklai/PinSight/releases
+1. Data Import and Pre-processing  
+2. Interactive Pin Editing  
+3. Visualization and Reporting  
+
+---
+
+## (a) Annotated Full Interface
+![Annotated GUI](./gui_full_visual.png)
+
+**Annotated components:**
+
+1. Board dimension inputs for pixel-to-metric scaling  
+2. Optional leveling/detrending toggle  
+3. Image import button  
+4. Manual profile module  
+5. Folder import for batch processing  
+6. Export module  
+7. Batch statistics panel  
+8. Interactive pin editing toggle  
+9. Results analysis panel  
+
+---
+
+## (b) Interactive Editing Mode
+![Editing Mode](./gui_edit_mode.png)
+
+Manual correction interface allowing users to add, reposition, or delete pins.
+All roughness metrics are recalculated instantly.
+
+---
+
+## (c) Visualization Module
+![Visualizations](./gui_visualizations.png)
+
+Reconstructed surface profile, autocorrelogram, and log–log semivariogram.
+
+---
+
+## (d) Manual Profile Acquisition Workflow
+![Manual Workflow](./gui_manual_profiler.png)
+
+ROI selection and axis calibration for structured manual digitization.
+
+---
+
+# Installation
+
+Download from:
+
+https://github.com/mouadklai/PinSight/releases
 
 Run:
+
 PinSight_v0.1_Setup.exe
 
-No Python installation is required.
+---
+
+# System Requirements
+
+- Windows 10 / 11 (64-bit)
+- ≥ 8 GB RAM recommended
+- Full HD display recommended
 
 ---
 
-## 🖥️ System Requirements
+# Citation
 
-- **Operating System:** Windows 10 / 11 (64-bit)
-- **RAM:** ≥ 8 GB recommended
-- **Display:** Full HD or higher recommended
-- **Input:** High-quality pin profiler photographs
+If you use PinSight in academic work, please cite:
 
----
-
-## 📷 Image Acquisition Guidelines
-
-For optimal performance:
-- Ensure uniform and sufficient lighting
-- Capture the full pin profiler board
-- Pins should be clearly visible and distinguishable
-- Avoid shadows, blur, and extreme perspective distortion
-- Recommended minimum: **~45 detectable pins**
-
-The application automatically identifies and reports unsuitable images.
-
----
-
-## 📚 Citation
-
-If you use PinSight in academic or technical work, please cite:
-
-**APA**
-Klai, M. et al. (2026). PinSight: A computer vision-based software for automated processing of pin profiler photographs for soil surface roughness analysis.
-
-**BibTeX**
-```bibtex
-@software{klai2026pinsight,
-  author = {Klai, Mouad et al.},
-  title  = {PinSight: A computer vision-based software for automated processing of pin profiler photographs for soil surface roughness analysis},
-  year   = {2026}
-}
+Klai, M. et al. (2026).  
+PinSight: A computer vision-based software for the efficient and automated processing of pin profiler photographs for soil roughness analysis.
