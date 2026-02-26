@@ -101,6 +101,21 @@ PinSight_v0.1_Setup.exe
 
 ---
 
+## Windows Security Notice
+
+PinSight is currently distributed as an unsigned academic application.
+Windows SmartScreen may display a warning before installation.
+
+If this happens:
+
+1. Click **“More info”**
+2. Click **“Run anyway”**
+
+The installer is hosted directly from the official GitHub repository.
+Code signing certificates will be added in future releases.
+
+---
+
 # System Requirements
 
 - Windows 10 / 11 (64-bit)
