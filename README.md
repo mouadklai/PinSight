@@ -17,7 +17,7 @@ Designed for research in:
 
 # Journal Submission
 
-**Journal:** Computers and Electronics in Agriculture  
+**Journal:** Computers & Geosciences
 
 **Article Title:**  
 PinSight: A computer vision-based software for the efficient and automated processing of pin profiler photographs for soil roughness analysis  
