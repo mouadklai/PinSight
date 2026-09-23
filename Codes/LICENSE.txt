@@ -1,0 +1,95 @@
+PinSight – A computer vision-based software for the efficient and automated
+processing of pin profiler photographs for soil surface roughness analysis
+
+Copyright © 2025
+Dr. Mouad Klai
+All rights reserved.
+
+
+1. LICENSE GRANT
+
+Permission is hereby granted, free of charge, to any person or institution
+obtaining a copy of this software and associated documentation files
+(the “Software”), to use the Software for:
+
+- academic research
+- educational purposes
+- scientific analysis
+- non-commercial governmental or institutional work
+
+subject to the conditions listed below.
+
+
+2. CONDITIONS OF USE
+
+2.1 Non-Commercial Use Only
+
+The Software may NOT be used, distributed, sublicensed, sold, leased,
+or integrated into any commercial product or service without prior
+written permission from the copyright holder.
+
+Commercial use includes, but is not limited to:
+- paid consulting services
+- proprietary software products
+- commercial data processing pipelines
+- paid training or services using the Software
+
+2.2 Citation Requirement
+
+Any scientific publication, report, thesis, or presentation that uses
+results produced by the Software MUST cite the following reference:
+
+Klai, M. (2025).
+PinSight: A computer vision-based software for the efficient and automated
+processing of pin profiler photographs for soil roughness analysis.
+
+Failure to cite the Software constitutes a violation of this license.
+
+2.3 Modification and Redistribution
+
+- Users may modify the Software for internal research or educational use.
+- Modified versions may NOT be redistributed publicly without explicit
+  written permission from the author.
+- Redistribution of the original Software must retain this license file
+  and all copyright notices.
+
+
+3. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+THE AUTHOR MAKES NO REPRESENTATION THAT THE SOFTWARE IS ERROR-FREE OR THAT
+ITS RESULTS ARE SCIENTIFICALLY OR OPERATIONALLY ACCURATE IN ALL CONTEXTS.
+
+
+4. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+THIS INCLUDES, BUT IS NOT LIMITED TO:
+- data loss
+- incorrect scientific conclusions
+- financial loss
+- misuse or misinterpretation of results
+
+
+5. GOVERNING LAW
+
+This license shall be governed and interpreted in accordance with the laws
+of the author’s country of residence, unless otherwise required by
+applicable law.
+
+
+6. CONTACT
+
+For commercial licensing, redistribution permission, or other inquiries,
+please contact:
+
+Dr. Mouad Klai
+mouad.klai-ext@gum6p.ma
+klaimouadklai@gmail.com
